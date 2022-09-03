@@ -3,8 +3,11 @@ font-family: 'Alegreya', serif;
 font-family: 'Merriweather', serif;
 font-family: 'Playfair Display', serif;
 */
-body {
-  background: radial-gradient(
+:root {
+  --primary-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Merriweather", serif;
+  --different-font-family: "Alegreya", serif;
+  --secondary-color: radial-gradient(
     328px at 2.9% 15%,
     rgb(191, 224, 251) 0%,
     rgb(232, 233, 251) 25.8%,
@@ -13,14 +16,48 @@ body {
     rgb(240, 251, 244) 100.7%
   );
 }
-h1 {
-  font-family: "Alegreya", serif;
+
+body {
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: --primary-font-family;
   font-weight: bold;
 }
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
+
 p {
-  font-family: "Merriweather", serif;
+  font-family: var(--secondary-font-family);
+  color: #272142;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero h1 {
+  font-size: 96px;
+}
+.hero h2 {
+  font-size: 28px;
+  line-height: 2;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+}
+.btn-styling {
+  background: #6c63ff;
+  color: white;
+  font-family: var(--different-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 4px;
 }
