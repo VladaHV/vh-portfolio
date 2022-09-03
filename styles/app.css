@@ -7,7 +7,8 @@ font-family: 'Playfair Display', serif;
   --primary-font-family: "Playfair Display", serif;
   --secondary-font-family: "Merriweather", serif;
   --different-font-family: "Alegreya", serif;
-  --secondary-color: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  --secondary-color-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  --secondary-color: #6c63ff;
 }
 
 body {
@@ -30,7 +31,7 @@ p {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: var(--secondary-color-gradient);
   text-align: center;
   padding: 160px 20px;
 }
@@ -40,17 +41,52 @@ p {
 .hero h2 {
   font-size: 28px;
   line-height: 2;
+  opacity: 0.7;
 }
 .hero p {
   font-size: 36px;
   font-weight: bold;
 }
 .btn-styling {
-  background: #6c63ff;
+  background: var(--secondary-color);
   color: white;
   font-family: var(--different-font-family);
   font-weight: 400;
   font-size: 20px;
   padding: 15px 30px;
   border-radius: 4px;
+}
+.style-col {
+  padding: 20px 0;
+}
+.style-col p {
+  opacity: 0.8;
+  line-height: 2;
+}
+.style-col h2 {
+  font-size: 64px;
+}
+.btn-styling-more {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-family: var(--different-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 44px;
+  }
+  .style-col {
+    text-align: center;
+    padding: 0;
+  }
+  .style-col h2 {
+    font-size: 42px;
+  }
+  .btn-styling-more {
+  }
 }
