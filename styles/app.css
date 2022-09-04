@@ -17,10 +17,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: --primary-font-family;
   font-weight: bold;
 }
@@ -75,30 +72,41 @@ p {
   padding: 15px 30px;
   border-radius: 4px;
 }
-.about-styling {
+.styling {
   padding: 70px 20px;
 }
 
-.about-content-styling {
+.styling-content {
   margin: 30px;
 }
 
-.about-styling h1 {
+.styling h1 {
   font-size: 64px;
   line-height: 1.1;
 }
 
-.about-styling h2 {
+.styling h2 {
   font-size: 18px;
 }
 
-.about-styling p {
+.styling p {
   line-height: 1.8;
+}
+
+.center-block {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon-name {
+  font-family: var(--secondary-font-family);
+  font-size: 10px;
 }
 
 @media (max-width: 991px) {
   .hero h1,
-  .about-styling h1 {
+  .styling h1 {
     font-size: 44px;
   }
   .style-col {
@@ -108,7 +116,7 @@ p {
   .style-col h2 {
     font-size: 42px;
   }
-  .about-styling {
+  .styling {
     text-align: center;
   }
 }
