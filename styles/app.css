@@ -14,17 +14,20 @@ font-family: 'Playfair Display', serif;
     rgb(185, 212, 242) 11.2%,
     rgb(244, 210, 226) 100.3%
   );
+  --primary-color: #f9f7fe;
   --secondary-color: #6c63ff;
   --different-color: rgb(29, 27, 39);
 }
 
 body {
   color: black;
+  font-family: var(--secondary-font-family);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: --primary-font-family;
   font-weight: bold;
 }
@@ -135,7 +138,7 @@ nav p.logo {
   color: var(--secondary-color);
 }
 .style-bgd {
-  background-color: rgb(238, 240, 249);
+  background-color: var(--primary-color);
 }
 
 .navbar-collapse {
@@ -147,6 +150,52 @@ li.nav-item {
 }
 .navbar {
   --bs-navbar-active-color: var(--secondary-color);
+}
+footer .contact-block {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin: 70px 0;
+  background-color: var(--primary-color);
+}
+
+footer h4 {
+  font-size: 32px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+footer .contact-links {
+  text-align: center;
+  margin: 70px 0 20px;
+  font-size: 24px;
+  line-height: 2;
+}
+
+footer .contact-links a {
+  text-decoration: none;
+  color: #000;
+}
+footer .icons-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer .icons-links a {
+  color: var(--secondary-color);
+  font-size: 30px;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+footer .icons-links a:hover {
+  color: white;
+  background: var(--secondary-color);
 }
 
 @media (max-width: 991px) {
@@ -170,11 +219,27 @@ li.nav-item {
     text-align: center;
     padding: 60px 15px;
   }
+  footer .contact-block {
+    display: block;
+    text-align: center;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+  footer a.btn-styling {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
   nav p.name {
     display: none;
+  }
+  footer .icons-links a {
+    font-size: 26px;
+    padding: 5px 10px;
+    margin: 0 5px;
   }
 }
 
@@ -197,5 +262,16 @@ li.nav-item {
   }
   .icon-name {
     font-size: 6px;
+  }
+  footer .contact-block {
+    padding: 20px 30px;
+  }
+  footer .contact-links {
+    font-size: 20px;
+  }
+  footer .icons-links a {
+    font-size: 20px;
+    padding: 3px 7px;
+    margin: 0 5px;
   }
 }
