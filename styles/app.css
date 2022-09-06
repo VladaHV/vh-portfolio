@@ -166,7 +166,7 @@ footer h4 {
 
 footer p {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 footer .contact-links {
   text-align: center;
@@ -217,7 +217,7 @@ footer .icons-links a:hover {
   .styling,
   .hero {
     text-align: center;
-    padding: 60px 15px;
+    padding: 100px 15px;
   }
   footer .contact-block {
     display: block;

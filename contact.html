@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work Vlada Honchar</title>
+    <meta
+      name="description"
+      content="Contsct of front-end developer Vlada Honchar based in Kryvyi Rih, Ukraine. Portfolio website build with HTML/CSS, Bootstrap, Fontawesome, Google Fonts, Responsive and SEO friendly"
+    />
+    <title>Contact of front-end developer Vlada Honchar - *VH*</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,6 +28,51 @@
     <link rel="stylesheet" href="/styles/app.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg fixed-top py-0 style-bgd">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" title="Homepage">
+          <span class="logo-name">
+            <p class="logo">VH</p>
+            <p class="name">Vlada Honchar</p>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/" title="Homepage">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html" title="About page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html" title="Work page">Work</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/contact.html"
+                title="Contact page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container styling">
       <div class="styling-content">
         <h1 class="mb-5">Let's get in touch!</h1>
@@ -39,11 +88,41 @@
             >Vlada Honchar</a
           >
         </p>
+        <h3>GitHub:</h3>
+        <p>
+          <a href="https://github.com/VladaHV" target="_blank">VladaHV </a>
+        </p>
         <h3>Facebook:</h3>
         <p>
-          <a href="facebook.com/vlada.honchar">vlada.honchar </a>
+          <a href="facebook.com/vlada.honchar" target="_blank"
+            >vlada.honchar
+          </a>
         </p>
       </div>
+      <footer>
+        <div class="contact-block justify-content-center">
+          <div>
+            <h4>Work Inqury</h4>
+            <p>🙋‍♀️ Let's work together 👩‍💻</p>
+          </div>
+        </div>
+        <div>
+        <p class="text-center mb-5">
+          👩‍💻 This website was coded by Vlada Honchar, and is
+          <a
+            href="https://github.com/VladaHV/vh-portfolio"
+            target="_blank"
+            title="GitHub project"
+          >
+            open-sourced
+          </a>
+        </p>
+      </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
