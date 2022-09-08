@@ -16,6 +16,11 @@ font-family: 'Playfair Display', serif;
   --primary-color: #f9f7fe;
   --secondary-color: #6c63ff;
   --different-color: rgb(29, 27, 39);
+  --secondary-color-gradient: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
 }
 
 body {
@@ -105,6 +110,14 @@ p {
 
 .styling-content {
   margin: 20px;
+}
+.styling-content a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.styling-content a:hover {
+  color: blueviolet;
 }
 
 .styling h1 {
