@@ -62,7 +62,7 @@ p {
 }
 .btn-styling {
   background: var(--secondary-color);
-  color: white;
+  color: var(--primary-color);
   font-family: var(--different-font-family);
   font-weight: 400;
   font-size: 20px;
