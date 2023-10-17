@@ -83,6 +83,7 @@ p {
 .style-col p {
   line-height: 2;
   color: var(--different-color);
+  text-align: justify;
 }
 .style-col h2 {
   font-size: 64px;
@@ -110,6 +111,7 @@ p {
 
 .styling-content {
   margin: 20px;
+  text-align: justify;
 }
 .styling-content a {
   text-decoration: none;
